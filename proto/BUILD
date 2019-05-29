@@ -1,19 +1,5 @@
-# load("@build_stack_rules_proto//cpp:cpp_proto_compile.bzl", "cpp_proto_compile")
-
-# cpp_proto_compile(
-#   name = "thing_cpp_proto",
-#   deps = [":thing_proto"],
-# )
-
-# For Go proto files
-# load("@build_stack_rules_proto//go:go_proto_compile.bzl", "go_proto_compile")
-
-# go_proto_compile(
-#     name = "thing_go_proto",
-#     deps = [":thing_proto"],
-# )
-
 load("@build_stack_rules_proto//go:go_proto_library.bzl", "go_proto_library")
+
 go_proto_library(
     name = "thing_go_proto",
     go_deps = ["@com_github_golang_protobuf//ptypes/any:go_default_library",],
