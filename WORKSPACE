@@ -24,8 +24,11 @@ http_archive(
 # go_proto_compile()
 
 # For Go proto lib
-load("@build_stack_rules_proto//go:deps.bzl", "go_proto_library")
-go_proto_library()
+# load("@build_stack_rules_proto//go:deps.bzl", "go_proto_library")
+# go_proto_library()
+
+load("@build_stack_rules_proto//go:deps.bzl", "go_grpc_compile")
+go_grpc_compile()
 
 load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_dependencies")
 go_rules_dependencies()
