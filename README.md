@@ -1,4 +1,4 @@
-# bazel-proto
+# bazel_example
 
 ## dev(windows)
 
