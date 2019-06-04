@@ -9,26 +9,32 @@
 # )
 
 load("@build_stack_rules_proto//go:go_grpc_compile.bzl", "go_grpc_compile")
-load("@build_stack_rules_proto//go:go_grpc_library.bzl", "go_grpc_library")
+# load("@build_stack_rules_proto//go:go_grpc_library.bzl", "go_grpc_library")
+load("@io_bazel_rules_go//proto:def.bzl", "go_grpc_library", "go_proto_library")
 
 go_grpc_compile(
-    name = "core_proto",
+    name = "example_go_proto",
     deps = [
         ":thing_proto",
-        ":greeter_grpc"
+        ":greeter_proto"
     ],
 )
 
-go_grpc_library(
-    name = "core_lib",
-    go_deps = [
-        "@com_github_golang_protobuf//ptypes/any:go_default_library",
-        "@go_googleapis//google/rpc:status_go_proto",
-        "@go_googleapis//google/api:annotations_go_proto",
-    ],
-    importpath = "core/greeter",
-    deps = [":greeter_grpc"],
-)
+# go_grpc_library(
+#     name = "example_lib",
+#     # go_deps = [
+#     #     "@com_github_golang_protobuf//ptypes/any:go_default_library",
+#     #     "@go_googleapis//google/rpc:status_go_proto",
+#     #     "@go_googleapis//google/api:annotations_go_proto",
+#     # ],
+#     proto = ":greeter_proto",
+#     importpath = "example",
+#     deps = [
+#         "@com_github_golang_protobuf//ptypes/any:go_default_library",
+#         "@go_googleapis//google/rpc:status_go_proto",
+#         "@go_googleapis//google/api:annotations_go_proto",
+#     ],
+# )
 
 proto_library(
     name = "thing_proto",
@@ -38,7 +44,7 @@ proto_library(
 )
 
 proto_library(
-    name = "greeter_grpc",
+    name = "greeter_proto",
     srcs = [
         "greeter.proto",
     ],

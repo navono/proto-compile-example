@@ -18,4 +18,4 @@
 ## build
 build with bazel:
 
-> bazel --batch build -c fastbuild //proto/...
+> ./build.sh
