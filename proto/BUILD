@@ -9,13 +9,25 @@
 # )
 
 load("@build_stack_rules_proto//go:go_grpc_compile.bzl", "go_grpc_compile")
+load("@build_stack_rules_proto//go:go_grpc_library.bzl", "go_grpc_library")
 
 go_grpc_compile(
-    name = "core",
+    name = "core_proto",
     deps = [
         ":thing_proto",
         ":greeter_grpc"
     ],
+)
+
+go_grpc_library(
+    name = "core_lib",
+    go_deps = [
+        "@com_github_golang_protobuf//ptypes/any:go_default_library",
+        "@go_googleapis//google/rpc:status_go_proto",
+        "@go_googleapis//google/api:annotations_go_proto",
+    ],
+    importpath = "core/greeter",
+    deps = [":greeter_grpc"],
 )
 
 proto_library(
