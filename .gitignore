@@ -3,4 +3,3 @@ bazel-genfiles/
 bazel-bin/
 bazel-out/
 bazel-testlogs/
-
