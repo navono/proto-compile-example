@@ -9,13 +9,21 @@
 # )
 
 load("@build_stack_rules_proto//go:go_grpc_compile.bzl", "go_grpc_compile")
-# load("@build_stack_rules_proto//go:go_grpc_library.bzl", "go_grpc_library")
+load("@build_stack_rules_proto//go:go_grpc_library.bzl", "go_grpc_library")
+load("@build_stack_rules_proto//github.com/grpc-ecosystem/grpc-gateway:gateway_grpc_compile.bzl", "gateway_grpc_compile")
 load("@io_bazel_rules_go//proto:def.bzl", "go_grpc_library", "go_proto_library")
 
 go_grpc_compile(
-    name = "example_go_proto",
+    name = "example_grpc_proto",
     deps = [
         ":thing_proto",
+        ":greeter_proto"
+    ],
+)
+
+gateway_grpc_compile(
+    name = "greeter",
+    deps = [
         ":greeter_proto"
     ],
 )

@@ -32,7 +32,6 @@ service Greeter {
   rpc TestHTTP (TestHTTPRequest) returns (TestHTTPResponse) {
     option (google.api.http) = {
       get: "/greeter/test",
-      body: "*",
     };
   }
 }
