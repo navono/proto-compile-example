@@ -9,6 +9,7 @@
 # )
 
 load("@build_stack_rules_proto//go:go_grpc_compile.bzl", "go_grpc_compile")
+
 go_grpc_compile(
     name = "core",
     deps = [
@@ -31,5 +32,9 @@ proto_library(
     ],
     visibility = [
         "//visibility:public",
+    ],
+    deps = [
+        "@go_googleapis//google/rpc:status_proto",
+        "@go_googleapis//google/api:annotations_proto",
     ],
 )
