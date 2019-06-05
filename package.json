@@ -6,7 +6,6 @@
   "author": "navono <navono007@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "e": "echo $(BAZEL_BUILD_OPTIONS)",
     "build": "bazel build -c fastbuild //example/..."
   },
   "dependencies": {
