@@ -24,23 +24,6 @@ typescript_proto_library(
     proto = ":greeter_proto",
 )
 
-
-# go_grpc_library(
-#     name = "example_lib",
-#     # go_deps = [
-#     #     "@com_github_golang_protobuf//ptypes/any:go_default_library",
-#     #     "@go_googleapis//google/rpc:status_go_proto",
-#     #     "@go_googleapis//google/api:annotations_go_proto",
-#     # ],
-#     proto = ":greeter_proto",
-#     importpath = "example",
-#     deps = [
-#         "@com_github_golang_protobuf//ptypes/any:go_default_library",
-#         "@go_googleapis//google/rpc:status_go_proto",
-#         "@go_googleapis//google/api:annotations_go_proto",
-#     ],
-# )
-
 proto_library(
     name = "thing_proto",
     srcs = ["thing.proto"],
