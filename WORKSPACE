@@ -53,7 +53,6 @@ typescript_proto_dependencies()
 
 
 #############################################
-
 load("@build_stack_rules_proto//go:deps.bzl", "go_grpc_compile", "go_grpc_library")
 go_grpc_compile()
 go_grpc_library()
