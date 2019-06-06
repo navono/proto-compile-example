@@ -1,5 +1,5 @@
 workspace(
-    name = "examples_protocol_buffers",
+    name = "bazel_protocol_buffers",
     managed_directories = {"@npm": ["node_modules"]},
 )
 
