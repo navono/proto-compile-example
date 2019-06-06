@@ -19,3 +19,7 @@
 build with bazel:
 
 > ./build.sh
+
+## TypeScript
+For now, add `ts_protoc_gen` have some problem with `come_google_protobuffers` as [issue](https://github.com/improbable-eng/ts-protoc-gen/issues) said, so I add `Makefile` to use docker to compile `.proto` file to `.d.ts` files.
+

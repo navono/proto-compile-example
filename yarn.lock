@@ -2,54 +2,6 @@
 # yarn lockfile v1
 
 
-"@bazel/bazel-darwin_x64@0.26.0":
-  version "0.26.0"
-  resolved "https://registry.npmjs.org/@bazel/bazel-darwin_x64/-/bazel-darwin_x64-0.26.0.tgz#24660853a01e286359636025618a1fda1aa978e1"
-  integrity sha512-9qcRlTW9g8TPJ1PWYIkNDUMsEjdhN4sJz5fDjva3GM7mnIST0sgJiRRW5Y9L3Ksv9+jNWmIOlj5wsibAUYyb5w==
-
-"@bazel/bazel-linux_x64@0.26.0":
-  version "0.26.0"
-  resolved "https://registry.npmjs.org/@bazel/bazel-linux_x64/-/bazel-linux_x64-0.26.0.tgz#9302b6df4363b5c492f2755174988935b84fb076"
-  integrity sha512-v9RTFIZb/A8Ej0Q1uCc/uTCRFZIRGqQpBVLO9Vqkbg4kScND9FxAI2RO0bv3Zhz7YTXBvJ8+kSfd/DY+0azwsA==
-
-"@bazel/bazel-win32_x64@0.26.0":
-  version "0.26.0"
-  resolved "https://registry.npmjs.org/@bazel/bazel-win32_x64/-/bazel-win32_x64-0.26.0.tgz#ae878cf2aae0ad9799141e554c47417f426c1aa7"
-  integrity sha512-hmhuWQUzTmVLDusSt701LFzkWoRdEsakDtEGKgIuQuAJ7zqwH8QUn3PpWIg5BA0qF0gxJBKMfTHGvNhMft3pmg==
-
-"@bazel/bazel@^0.26.0":
-  version "0.26.0"
-  resolved "https://registry.npmjs.org/@bazel/bazel/-/bazel-0.26.0.tgz#651513d5e11198f4c911024fdd57e76e0742fe9d"
-  integrity sha512-vxm3nuvYu97NRVkcRBfuLHqDytykCazZaTX13j+Ssqg0XIuuIiewTXGNKq2lcxeydJnscArMyYEv+gyXpexHDA==
-  optionalDependencies:
-    "@bazel/bazel-darwin_x64" "0.26.0"
-    "@bazel/bazel-linux_x64" "0.26.0"
-    "@bazel/bazel-win32_x64" "0.26.0"
-
-"@bazel/buildifier-darwin_x64@0.25.1":
-  version "0.25.1"
-  resolved "https://registry.npmjs.org/@bazel/buildifier-darwin_x64/-/buildifier-darwin_x64-0.25.1.tgz#bcb8643ae46c6aa4f4981f59648ecd9087b30a11"
-  integrity sha512-9fD3tXYgSjpZCEUGFBadfwDw89b3z3acYLd8+a0F6Sb/9LB0jzXOCMzqFMA7m1b3wOh1ecgWOyT0TyPUDSLRkg==
-
-"@bazel/buildifier-linux_x64@0.25.1":
-  version "0.25.1"
-  resolved "https://registry.npmjs.org/@bazel/buildifier-linux_x64/-/buildifier-linux_x64-0.25.1.tgz#50cc7c3b8f9dfa818ea6cc9f2ec761cbd39471ea"
-  integrity sha512-Wt2yA+yeimi6i0USHoE1T2EhRJwtKDBmDLQx2E8Q+QXysULLm4usMEIGPdQYbHqKyjL75jbwlwZTlm9EzdXgCg==
-
-"@bazel/buildifier-win32_x64@0.25.1":
-  version "0.25.1"
-  resolved "https://registry.npmjs.org/@bazel/buildifier-win32_x64/-/buildifier-win32_x64-0.25.1.tgz#d990afed296f65675c1406ae36580473cab65f4c"
-  integrity sha512-ak91iv940z04NJfEhWHMSudjlZK5PrpDNL8k/cmYowi1JSfYvCchfABiXWxfWURmvqgSGE+KV72xxZ0HLU60bw==
-
-"@bazel/buildifier@^0.25.1":
-  version "0.25.1"
-  resolved "https://registry.npmjs.org/@bazel/buildifier/-/buildifier-0.25.1.tgz#e29ab77802d99d70a891b9a471f62e80030fc326"
-  integrity sha512-d3+DgsGmQ3cSLCm99321cl+vKD/c3pNSQINCBnipmNeNd7UA3/UQ2Ibp6MXZslF8fMQDpuLxhhCFUOnFAoNWsw==
-  optionalDependencies:
-    "@bazel/buildifier-darwin_x64" "0.25.1"
-    "@bazel/buildifier-linux_x64" "0.25.1"
-    "@bazel/buildifier-win32_x64" "0.25.1"
-
 "@bazel/karma@^0.30.2":
   version "0.30.2"
   resolved "https://registry.npmjs.org/@bazel/karma/-/karma-0.30.2.tgz#3aa074d9e76f53c0faa985bb6bcbb82194e68f16"
@@ -176,9 +128,9 @@ after@0.8.2:
   integrity sha1-/ts5T58OAqqXaOcCvaI7UF+ufh8=
 
 agent-base@^4.1.0:
-  version "4.2.1"
-  resolved "https://registry.npmjs.org/agent-base/-/agent-base-4.2.1.tgz#d89e5999f797875674c07d87f260fc41e83e8ca9"
-  integrity sha512-JVwXMr9nHYTUXsBFKUqhJwvlcYU/blreOEUkhNR2eXZIvwd+c+o5V4MgDPKWnMS/56awN3TRzIP+KoPn+roQtg==
+  version "4.3.0"
+  resolved "https://registry.npmjs.org/agent-base/-/agent-base-4.3.0.tgz#8165f01c436009bccad0b1d122f05ed770efc6ee"
+  integrity sha512-salcGninV0nPrwpGNn4VTXBb1SOuXQBiqbrNXoeizJsHrsL6ERFM2Ne3JUSBWRE6aeNJI2ROP/WEEIDUiDe3cg==
   dependencies:
     es6-promisify "^5.0.0"
 

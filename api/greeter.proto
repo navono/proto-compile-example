@@ -19,7 +19,7 @@ option java_package = "io.grpc.examples.Greeter";
 option java_outer_classname = "GreeterProto";
 option objc_class_prefix = "GTR";
 
-package example;
+package api;
 
 import "google/api/annotations.proto";
 import "google/rpc/status.proto";

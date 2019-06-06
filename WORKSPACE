@@ -1,4 +1,7 @@
-workspace(name = "example")
+workspace(
+    name = "examples_protocol_buffers",
+    managed_directories = {"@npm": ["node_modules"]},
+)
 
 # go version for rules_go
 GO_VERSION = "1.12.5"
@@ -33,6 +36,10 @@ http_archive(
 )
 
 load("@build_bazel_rules_nodejs//:defs.bzl", "yarn_install")
+# This runs yarn install, then our generate_build_file.js to create BUILD files
+# inside the resulting node_modules directory.
+# The name "npm" here means the resulting modules are referenced like
+# @npm//jasmine
 yarn_install(
     name = "npm",
     package_json = "//:package.json",
@@ -46,7 +53,7 @@ install_bazel_dependencies()
 load("@npm_bazel_typescript//:index.bzl", "ts_setup_workspace")
 ts_setup_workspace()
 
-load("@npm_bazel_typescript//:index.bzl", "ts_devserver", "ts_library")
+# load("@npm_bazel_typescript//:index.bzl", "ts_devserver", "ts_library")
 
 load("@ts_protoc_gen//:defs.bzl", "typescript_proto_dependencies")
 typescript_proto_dependencies()
