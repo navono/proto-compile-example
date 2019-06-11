@@ -1,5 +1,5 @@
 load("@build_stack_rules_proto//go:go_grpc_compile.bzl", "go_grpc_compile")
-# load("@build_stack_rules_proto//go:go_grpc_library.bzl", "go_grpc_library")
+load("@build_stack_rules_proto//go:go_grpc_library.bzl", "go_grpc_library")
 load("@build_stack_rules_proto//github.com/grpc-ecosystem/grpc-gateway:gateway_grpc_compile.bzl", "gateway_grpc_compile")
 
 # load("@ts_protoc_gen//:defs.bzl", "typescript_proto_library")
@@ -26,7 +26,7 @@ proto_library(
 )
 
 go_grpc_compile(
-    name = "grpc_proto",
+    name = "go_proto",
     deps = [
         ":thing_proto",
         ":greeter_proto"
@@ -34,13 +34,13 @@ go_grpc_compile(
 )
 
 gateway_grpc_compile(
-    name = "greeter_grpc",
+    name = "gateway_proto",
     deps = [
         ":greeter_proto"
     ],
 )
 
 # typescript_proto_library(
-#     name = "greeter_ts_proto",
+#     name = "ts_proto",
 #     proto = ":greeter_proto",
 # )

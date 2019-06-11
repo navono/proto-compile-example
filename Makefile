@@ -3,7 +3,7 @@ protoCompiler = navono007/proto-compiler:latest
 list:=$(shell find ./api -iname "*.proto")
 proto_files = $(addprefix repo/, $(list))
 
-generate:
+proto:
 	$(call get_file)
 	docker run -v ${PWD}:/repo $(protoCompiler) \
 		protoc -Irepo/api -Irepo/third_party \
