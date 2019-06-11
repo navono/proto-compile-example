@@ -6,7 +6,7 @@
   "author": "navono <navono007@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "bazel build -c fastbuild //example/..."
+    "build": "bazel build -c fastbuild //api/..."
   },
   "dependencies": {
     "@improbable-eng/grpc-web": "^0.9.6",

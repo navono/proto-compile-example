@@ -65,16 +65,15 @@ go_grpc_compile()
 go_grpc_library()
 
 load("@build_stack_rules_proto//:deps.bzl", "bazel_gazelle", "io_bazel_rules_go")
-io_bazel_rules_go()
-
-load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_dependencies")
-go_rules_dependencies()
-go_register_toolchains(go_version = GO_VERSION)
-
 bazel_gazelle()
+io_bazel_rules_go()
 
 load("@build_stack_rules_proto//github.com/grpc-ecosystem/grpc-gateway:deps.bzl", "gateway_grpc_compile")
 gateway_grpc_compile()
 
 load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies")
 gazelle_dependencies()
+
+load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_dependencies")
+go_rules_dependencies()
+go_register_toolchains(go_version = GO_VERSION)
