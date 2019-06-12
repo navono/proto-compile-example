@@ -58,6 +58,13 @@ ts_setup_workspace()
 load("@ts_protoc_gen//:defs.bzl", "typescript_proto_dependencies")
 typescript_proto_dependencies()
 
+# load("@build_stack_rules_proto//github.com/grpc/grpc-web:deps.bzl", "ts_grpc_compile")
+# ts_grpc_compile()
+
+# load("@io_bazel_rules_closure//closure:defs.bzl", "closure_repositories")
+# closure_repositories(
+#     omit_com_google_protobuf = True,
+# )
 
 #############################################
 load("@build_stack_rules_proto//go:deps.bzl", "go_grpc_compile", "go_grpc_library")
