@@ -11,7 +11,8 @@
   "dependencies": {
     "@improbable-eng/grpc-web": "^0.9.6",
     "browser-headers": "^0.4.1",
-    "google-protobuf": "^3.8.0"
+    "google-protobuf": "^3.8.0",
+    "ts-protoc-gen": "^0.10.0"
   },
   "devDependencies": {
     "@bazel/karma": "^0.30.2",
