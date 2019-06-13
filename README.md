@@ -1,4 +1,4 @@
-# proto_compile_exxmple
+# proto_compile_example
 
 `proto` 文件编译示例。
 
